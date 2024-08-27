@@ -1,36 +1,54 @@
-html, body {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
     width: 100%;
     height: 100%;
 }
 
-
-#main {
-    position: relative;
+#main{
     width: 100%;
-    height: 100%;
 }
 
-#fs {
+#loader{
     width: 100%;
-    height: 100%;
-    background-color: rgb(37, 37, 37);
-
+    height: 100vh;
+    background-color: #111;
+    color: #fff;
 }
 
-#elem {
-    width: 100%;
+#loader #topheading{
+    top: 5%;
     position: absolute;
-    bottom: 0;
-    height: 0px;
-    background-color: rgb(92, 186, 131);
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
-#white {
-    width: 100%;
-    height: 0;
+#topheading h5{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+#loader h1{
     position: absolute;
-    bottom: 0;
-    background-color: #dadada;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    font-weight: 500;
+
+}
+
+#green{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0vh;
+    background-color: #14CF93;
 }
